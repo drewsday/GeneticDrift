@@ -4,7 +4,7 @@ from pylab import *
 from random import *
 import sys
 from PyQt4 import QtCore, QtGui
-from TESTING import Ui_GeneticDrift
+from newdriftgui import Ui_GeneticDrift
  
 class MyForm(QtGui.QMainWindow):
   def __init__(self, parent=None):
