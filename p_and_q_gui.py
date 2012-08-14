@@ -4,12 +4,12 @@ from pylab import *
 from random import *
 import sys
 from PyQt4 import QtCore, QtGui
-from driftgui import Ui_Form
+from TESTING import Ui_GeneticDrift
  
 class MyForm(QtGui.QMainWindow):
   def __init__(self, parent=None):
     QtGui.QWidget.__init__(self, parent)
-    self.ui = Ui_Form()
+    self.ui = Ui_GeneticDrift()
     self.ui.setupUi(self)
     QtCore.QObject.connect(self.ui.pushRun, QtCore.SIGNAL("clicked()"), self.run_sim )
  
